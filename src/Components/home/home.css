@@ -1,0 +1,117 @@
+.home_content{
+    grid-template-columns: 116px repeat(2,1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+.home_social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+.home_social-icon{
+    font-size: 1.28rem;
+    color:#fc84b4;
+    
+}
+.home_social-icon:hover{
+    color: aliceblue;
+}
+.gradiente{
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.home_data h1 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+  }
+  .home_img img{
+    
+  animation: updown 3s linear infinite;
+  } 
+    @keyframes updown {
+        0% {
+            transform: translateY(-20px);
+        }
+        50% {
+            transform: translateY(20px);
+        }
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+    .txt-rotate > .wrap {
+      border-right: 0.08em solid #666;
+    }
+    .gradiente {
+      background: linear-gradient(to right, #ec4789, #33dae9);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  
+/*.home_img{
+    background: url(../../assets/img/header-imag.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-self:center;
+    width: 350px;
+    height: 350px;
+}*/
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .home_content{
+       grid-template-columns: 100px repeat(2,1fr);
+       column-gap: 1.25rem;
+    }
+    .home_data h1{
+        font-size: 28px;
+      }
+    .home_img{
+      margin: auto;
+    }
+}
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .home_content{
+        grid-template-columns:0.5fr 3fr;
+        padding-top: 3.5rem;
+     }
+     .home_data h1{
+         font-size: 28px;
+       }
+     .home_img{
+        grid-column: 1/3;
+     }
+    
+   
+  }
+  
+  @media screen and (max-width: 576px) {
+    .gradiente{
+      font-size: 17px;
+      
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+   
+     .gradiente{
+        font-size: 16px;
+        
+    }
+  }

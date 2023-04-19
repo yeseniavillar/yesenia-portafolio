@@ -1,0 +1,219 @@
+.skills{
+    margin-top: 40px;
+}
+.skill__container{
+    display: flex;
+    justify-content: center;
+}
+.skills__content{
+    max-width: 600px;
+    background-color:#16181d;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding:2rem 2rem;
+    border-radius: 1.25rem;
+}
+.skills__title{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    margin-bottom: var(--mb-1-5);
+}
+.skill__name{
+    letter-spacing: 1px;
+    margin-top: 26px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.progress-bar{
+    background:#959595;
+    width: 370px;
+    height: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.progress-bar div{
+    /*background:#fc84b4;*/
+    background: linear-gradient(to right, #dd2971, #fc84b4);
+    width: 50%;
+    height: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.progress-bar div span{
+    background:#16181d;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    float: right;
+    margin-top: -15px;
+    margin-right:-20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.circo span{
+    border: 1px solid gray;
+}
+/*=============== PORCENTAJE PARA CADA SKILLS FRONTEND===============*/
+ .html{
+    width: 95%;
+    animation: html 1s linear forwards;
+}
+.css{
+    width: 85%;
+    animation: css 1s linear forwards;
+}
+.react{
+    width: 50%;
+    animation: react 1s linear forwards;
+}
+.wordpress{
+    width: 90%;
+    animation: wordpress 1s linear forwards;
+}
+@keyframes html{
+    100%{
+       width: 95%; 
+    }
+}
+@keyframes css{
+    100%{
+       width: 80%; 
+    }
+}
+@keyframes react{
+    100%{
+       width: 50%; 
+    }
+}
+@keyframes wordpress{
+    100%{
+       width: 90%; 
+    }
+}
+/*=============== PORCENTAJE PARA CADA SKILLS BACKEND===============*/
+.sql{
+    width: 40%;
+    animation: sql 1s linear forwards;
+}
+.php{
+    width: 50%;
+    animation: php 1s linear forwards;
+}
+.node{
+    width: 50%;
+    animation: node 1s linear forwards;
+}
+.larabel{
+    width: 30%;
+    animation: larabel 1s linear forwards;
+}
+@keyframes sql{
+    100%{
+       width: 40%; 
+    }
+}
+@keyframes php{
+    100%{
+       width: 50%; 
+    }
+}
+@keyframes node{
+    100%{
+       width: 50%; 
+    }
+}
+@keyframes larabel{
+    100%{
+       width: 30%; 
+    }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    /*.skill__container{
+        grid-template-columns: max-content;
+        row-gap: 2rem;
+        margin: auto;
+    }*/
+    
+}
+@media (max-width: 768px) {
+    .skill__container {
+        flex-direction: column;
+    }
+    .skill__content{
+     max-width: none;
+     width: 100%;
+    }
+    .progress-bar{
+      width: 500px;
+   }
+}
+
+ 
+  @media screen and (max-width: 576px) {
+   /* .skill__container{
+        grid-template-columns:1fr;
+        row-gap: 2rem;
+        padding: 2px 30px;
+        
+       
+    }
+    .skills__content{
+      padding: 1.5rem 3rem;
+        margin: auto;
+    }*/
+    .progress-bar{
+        width: 250px;
+        height: 9px;
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .progress-bar{
+        width: 240px;
+        height: 8px;
+    }
+    
+  }
+  /*.skill__container{
+    grid-template-columns: repeat(2, 500px);
+    column-gap: 3rem;
+    justify-content: center;
+}
+.skills__content{
+    background-color:#16181d;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding:2rem 4rem;
+    border-radius: 1.25rem;
+}
+.skills__title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1-5);
+}
+.skills__box{
+   display: flex; 
+   justify-content: center;
+   column-gap: 2.5rem;
+}
+.skill__data{
+    display: flex;
+    column-gap: 0.5rem;
+}
+.skills .bx-badge-check{
+    font-size: 1rem;
+}
+.skill__name{
+    font-size: 17px;
+    line-height: 18px;
+    padding: 8px 0px;
+}
+*/

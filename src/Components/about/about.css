@@ -1,0 +1,121 @@
+.about__container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+    margin-top: 20px;
+}
+.about__img{
+    width: 80%;
+    border-radius: 20px;
+    border: 0.2px solid rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+.about__info{
+    grid-template-columns: repeat(3, 160px);
+    gap: 0.8rem;
+    margin-bottom: var(--mb-2);
+}
+.about__box{
+    background-color:#16181d;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.3rem;
+  
+}
+.about__icon{
+    font-size: 2.2rem;
+    margin-bottom: var(--mb-0-5);
+}
+.about__title{
+    font-size: 20px;
+}
+.about__subtitle{
+    color: #fc84b4;
+}
+.about__description{
+    padding: 0 1rem 0 0;
+    margin-bottom: var(--mb-2-5);
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    font-weight: 300;
+}
+.about__data a{
+    color: #ffff;
+    padding: 15px 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(to right, #dd2971, #3dc8e8) 1;
+}
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .about__container{
+      grid-template-columns: 1fr;
+      row-gap:2.5rem; 
+    }
+    .about__img{
+        width: 65%;
+        margin: auto;
+    }
+    .about__box{
+        padding: 0.75rem 0.5rem;
+    }
+    .about__data{
+        text-align: center;
+    }
+    .about__info{
+        justify-content: center;
+    }
+    .about__description{
+        padding: 0 5rem;
+        margin-bottom: 2rem;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .about__img{
+        width: 65%;
+        margin: auto;
+    }
+    .about__icon{
+        font-size: 1.1rem;
+    }
+    .about__title{
+        font-size: 15px;
+    }
+    .about__subtitle{
+       font-size: 14px;
+    }
+    .about__info{
+     gap: 0.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .about__info{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about__description{
+        padding: 0;
+    }
+    .about__img{
+        width: 70%;
+        margin: auto;
+    }
+    .about__description{
+        font-size: 17px;
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .about__info{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about__description{
+        font-size: 16px;
+    }
+  }
+  

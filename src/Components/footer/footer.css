@@ -1,0 +1,23 @@
+.footer{
+    border-top: 1px solid rgba(0,0,0, 0.1);
+}
+.footer__container{
+    padding: 2rem 0 2rem;
+}
+.footer__social{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.25rem;
+}
+.footer__social-link{
+    color: #fff;;
+    font-size: 1.80rem;
+    padding: 0.4rem;
+    display: inline-flex;
+}
+.footer__copy{
+    display: block;
+    margin-top:2.5rem ;
+    color: #959595;
+    text-align: center;
+}

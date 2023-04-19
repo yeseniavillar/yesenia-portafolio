@@ -1,0 +1,124 @@
+
+.project__title {
+    font-size:18px;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+ .project__title:hover{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    color: rgb(108, 107, 107);
+}
+
+
+.proyectos{
+    margin-top: 80px;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    padding-bottom: 6rem;
+}
+
+.item-container{
+    overflow: hidden;
+}
+
+.item-con{
+    width: 100%;
+    padding: 1.2rem 1.2rem;
+    background-color: #16181d;
+    
+}
+
+.item-container > img{
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.item-container > img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.buttons{
+    width: 70%;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.btn{
+    padding: .5rem 2rem;
+    background-color: #16181d;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    transition: all 0.4s cubic-bezier(1,-0.16,.6,1.35);
+}
+
+.btn:not(:last-child){
+    margin-right: 1rem;
+}
+
+.btn:hover{
+    background: linear-gradient(to right, #dd2971, #fc84b4);
+    cursor: pointer;
+}
+
+.btn:active, .btn:focus{
+    outline: none;
+    border: none;
+}
+.btn__ver{
+    color: #ffff;
+    font-size: 18px;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+   
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .item{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .buttons{
+        width: 100%;
+        margin: 1rem auto;
+        margin-bottom: 50px;
+    }
+    .btn{
+        margin-bottom: 10px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .buttons{
+        width: 100%;
+        margin: 1rem auto;
+        margin-bottom: 50px;
+    }
+    .btn{
+        margin-bottom: 10px;
+    }
+}
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .buttons{
+        width: 100%;
+        margin: 1rem auto;
+        margin-bottom: 50px;
+    }
+    .btn{
+        margin-bottom: 10px;
+    }
+  }
+  
